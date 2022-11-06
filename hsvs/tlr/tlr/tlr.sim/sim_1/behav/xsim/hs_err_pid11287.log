@@ -1,0 +1,7 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3f040) [0x7f1109730040]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x7717) [0x7f11078e9717]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f110981271f]

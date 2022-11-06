@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec  7 14:04:00 2021
+# Process ID: 7305
+# Current directory: /home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.runs/rgb2vga_0_synth_1
+# Command line: vivado -log rgb2vga_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2vga_0.tcl
+# Log file: /home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.runs/rgb2vga_0_synth_1/rgb2vga_0.vds
+# Journal file: /home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.runs/rgb2vga_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source rgb2vga_0.tcl -notrace

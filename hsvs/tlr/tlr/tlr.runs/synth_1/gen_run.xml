@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1642515881">
+  <File Type="VDS-TIMING-PB" Name="tsr_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tsr_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="tsr_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="tsr_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tsr_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="tsr_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="tsr_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="tsr_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="tsr_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/tsr/tsr.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/tsr/hdl/tsr_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/median5x5_0/median5x5_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tsr_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../hdmi_vga_zybo_src/Zybo_HDMI.xdc"/>
+        <Attr Name="ImportTime" Val="1523460514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_median5x5_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_parameter_register_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_video_mux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_dvi2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tsr_processing_system7_0_0"/>
+</GenRun>

@@ -1,0 +1,230 @@
+14:02:16 INFO  : Registering command handlers for SDK TCF services
+14:02:20 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/klara/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+14:02:26 INFO  : XSCT server has started successfully.
+14:02:26 INFO  : Successfully done setting XSCT server connection channel  
+14:02:30 INFO  : Successfully done setting SDK workspace  
+14:02:31 INFO  : Processing command line option -hwspec /home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+14:10:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786344A" && level==0} -index 1' command is executed.
+14:10:44 INFO  : FPGA configured successfully with bitstream "/home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/tsr_wrapper.bit"
+14:13:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786344A" && level==0} -index 1' command is executed.
+14:13:08 INFO  : FPGA configured successfully with bitstream "/home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/tsr_wrapper.bit"
+14:17:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786344A" && level==0} -index 1' command is executed.
+14:17:40 INFO  : 'fpga -state' command is executed.
+14:17:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:41 INFO  : Jtag cable 'Digilent Zybo 210279786344A' is selected.
+14:17:41 INFO  : 'jtag frequency' command is executed.
+14:17:41 INFO  : Sourcing of '/home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:17:41 INFO  : Context for 'APU' is selected.
+14:17:41 INFO  : Hardware design information is loaded from '/home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf'.
+14:17:41 INFO  : 'configparams force-mem-access 1' command is executed.
+14:17:41 INFO  : Context for 'APU' is selected.
+14:17:41 INFO  : 'stop' command is executed.
+14:17:41 INFO  : 'ps7_init' command is executed.
+14:17:41 INFO  : 'ps7_post_config' command is executed.
+14:17:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:17:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:41 INFO  : The application '/home/lsriw/klara/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:17:41 INFO  : 'configparams force-mem-access 0' command is executed.
+14:17:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786344A"} -index 0
+loadhw -hw /home/lsriw/klara/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786344A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786344A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786344A"} -index 0
+dow /home/lsriw/klara/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:17:41 INFO  : Memory regions updated for context APU
+14:17:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:41 INFO  : 'con' command is executed.
+14:17:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786344A"} -index 0
+con
+----------------End of Script----------------
+
+14:17:41 INFO  : Launch script is exported to file '/home/lsriw/klara/tlr/tlr/tlr.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_tsr.elf_on_local.tcl'
+15:05:36 ERROR : (XSDB Server)Hangup
+
+15:05:36 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/klara/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+13:49:59 INFO  : Registering command handlers for SDK TCF services
+13:50:00 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+13:50:01 INFO  : XSCT server has started successfully.
+13:50:01 INFO  : Successfully done setting XSCT server connection channel  
+13:50:01 INFO  : Successfully done setting SDK workspace  
+13:50:01 INFO  : Processing command line option -hwspec /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+14:08:36 INFO  : Registering command handlers for SDK TCF services
+14:08:37 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+14:08:38 INFO  : XSCT server has started successfully.
+14:08:38 INFO  : Successfully done setting XSCT server connection channel  
+14:08:38 INFO  : Successfully done setting SDK workspace  
+14:08:38 INFO  : Processing command line option -hwspec /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+14:08:38 INFO  : Checking for hwspec changes in the project tsr_wrapper_hw_platform_1.
+14:08:40 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1639492164000,  Project:1634644797000
+14:08:40 INFO  : The hardware specification for project 'tsr_wrapper_hw_platform_1' is different from /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+14:08:40 INFO  : Copied contents of /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf into /tsr_wrapper_hw_platform_1/system.hdf.
+14:08:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:08:42 INFO  : Clearing existing target manager status.
+14:08:42 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:08:42 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:19:50 ERROR : Unable to load properties file .sdkproject for project tsr2_bsp.
+14:19:50 ERROR : Unable to load properties file .sdkproject for project tsr_bsp.
+14:21:24 INFO  : Registering command handlers for SDK TCF services
+14:21:25 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+14:21:26 INFO  : XSCT server has started successfully.
+14:21:26 INFO  : Successfully done setting XSCT server connection channel  
+14:21:26 INFO  : Successfully done setting SDK workspace  
+14:21:26 INFO  : Processing command line option -hwspec /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+15:28:21 INFO  : Registering command handlers for SDK TCF services
+15:28:22 INFO  : Launching XSCT server: xsct -n -interactive /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/temp_xsdb_launch_script.tcl
+15:28:23 INFO  : XSCT server has started successfully.
+15:28:23 INFO  : Successfully done setting XSCT server connection channel  
+15:28:23 INFO  : Successfully done setting SDK workspace  
+15:28:23 INFO  : Processing command line option -hwspec /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+15:28:23 INFO  : Checking for hwspec changes in the project tsr_wrapper_hw_platform_0.
+15:28:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1642516006000,  Project:1639492164000
+15:28:25 INFO  : The hardware specification for project 'tsr_wrapper_hw_platform_0' is different from /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf.
+15:28:25 INFO  : Copied contents of /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper.hdf into /tsr_wrapper_hw_platform_0/system.hdf.
+15:28:26 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:28:27 INFO  : 
+15:28:28 INFO  : Updating hardware inferred compiler options for tsr.
+15:28:28 INFO  : Clearing existing target manager status.
+15:32:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:32:37 INFO  : FPGA configured successfully with bitstream "/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/tsr_wrapper.bit"
+15:33:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:33:47 INFO  : 'fpga -state' command is executed.
+15:33:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:48 INFO  : Jtag cable 'Digilent Zybo 210279785954A' is selected.
+15:33:48 INFO  : 'jtag frequency' command is executed.
+15:33:48 INFO  : Sourcing of '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:33:48 INFO  : Context for 'APU' is selected.
+15:33:48 INFO  : Hardware design information is loaded from '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf'.
+15:33:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:33:48 INFO  : Context for 'APU' is selected.
+15:33:48 INFO  : 'stop' command is executed.
+15:33:48 INFO  : 'ps7_init' command is executed.
+15:33:48 INFO  : 'ps7_post_config' command is executed.
+15:33:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:33:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:48 INFO  : The application '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:33:48 INFO  : 'configparams force-mem-access 0' command is executed.
+15:33:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+loadhw -hw /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+dow /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:33:48 INFO  : Memory regions updated for context APU
+15:33:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:48 INFO  : 'con' command is executed.
+15:33:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+con
+----------------End of Script----------------
+
+15:33:48 INFO  : Launch script is exported to file '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_tsr.elf_on_local.tcl'
+15:34:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:34:47 INFO  : FPGA configured successfully with bitstream "/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/tsr_wrapper.bit"
+15:35:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:35:09 INFO  : 'fpga -state' command is executed.
+15:35:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:09 INFO  : Jtag cable 'Digilent Zybo 210279785954A' is selected.
+15:35:09 INFO  : 'jtag frequency' command is executed.
+15:35:09 INFO  : Sourcing of '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:35:09 INFO  : Context for 'APU' is selected.
+15:35:09 INFO  : Hardware design information is loaded from '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf'.
+15:35:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:09 INFO  : Context for 'APU' is selected.
+15:35:09 INFO  : 'stop' command is executed.
+15:35:10 INFO  : 'ps7_init' command is executed.
+15:35:10 INFO  : 'ps7_post_config' command is executed.
+15:35:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:35:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:12 ERROR : Memory write error at 0x100000. AP transaction timeout
+15:35:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+loadhw -hw /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+dow /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf
+----------------End of Script----------------
+
+15:35:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:35:39 INFO  : FPGA configured successfully with bitstream "/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/tsr_wrapper.bit"
+15:35:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785954A" && level==0} -index 1' command is executed.
+15:35:49 INFO  : 'fpga -state' command is executed.
+15:35:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:49 INFO  : Jtag cable 'Digilent Zybo 210279785954A' is selected.
+15:35:49 INFO  : 'jtag frequency' command is executed.
+15:35:49 INFO  : Sourcing of '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:35:49 INFO  : Context for 'APU' is selected.
+15:35:49 INFO  : Hardware design information is loaded from '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf'.
+15:35:49 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:49 INFO  : Context for 'APU' is selected.
+15:35:49 INFO  : 'stop' command is executed.
+15:35:49 INFO  : 'ps7_init' command is executed.
+15:35:49 INFO  : 'ps7_post_config' command is executed.
+15:35:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:35:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:49 INFO  : The application '/home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:35:49 INFO  : 'configparams force-mem-access 0' command is executed.
+15:35:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+loadhw -hw /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+dow /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.sdk/tsr/Debug/tsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:35:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:49 INFO  : 'con' command is executed.
+15:35:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785954A"} -index 0
+con
+----------------End of Script----------------
+
+15:35:49 INFO  : Disconnected from the channel tcfchan#1.

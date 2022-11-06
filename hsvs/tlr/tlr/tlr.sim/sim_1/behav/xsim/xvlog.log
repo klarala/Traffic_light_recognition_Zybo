@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.srcs/sources_1/ip/vpm_0_3/src/LUT/sim/LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.srcs/sources_1/ip/vpm_0_3/src/vpm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vpm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/Documents/Camugli/hsvs/tlr/tlr/tlr.srcs/sources_1/ip/vpm_0_3/sim/vpm_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vpm_0

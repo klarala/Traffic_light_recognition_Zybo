@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/hdmi_in.v,1642513076,verilog,,/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/hdmi_out.v,1490345072,verilog,,/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/median5x5.v,,hdmi_out,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/tb_hdmi.v,1642510905,verilog,,,,tb_hdmi,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v,1641302172,verilog,,/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/delayLinieBRAM_WP.v,,delayLineBRAM,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/delayLinieBRAM_WP.v,1544281682,verilog,,/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/hdmi_in.v,,delayLinieBRAM_WP,,,,,,,,
+/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/median5x5.v,1642513588,verilog,,/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sim_1/imports/tb_src/tb_hdmi.v,,median5x5,,,,,,,,

@@ -1,0 +1,2 @@
+rgb2vga.vhd,vhdl,xil_defaultlib,../../../../tlr.srcs/sources_1/ip/rgb2vga_0/src/rgb2vga.vhd,
+rgb2vga_0.vhd,vhdl,xil_defaultlib,../../../../tlr.srcs/sources_1/ip/rgb2vga_0/sim/rgb2vga_0.vhd,

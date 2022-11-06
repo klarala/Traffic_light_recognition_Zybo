@@ -1,0 +1,14 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xil_io.h"
+
+int main()
+{
+	while (1) {
+		int sw = Xil_In32(XPAR_PARAMETER_REGISTER_0_S00_AXI_BASEADDR+2*4); // +8 as register 2
+		xil_printf("SW = %d\n",sw);
+	}
+	return 0;
+}

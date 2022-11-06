@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tlr.srcs/sources_1/bd/tsr/ipshared/ec67/hdl" --include "../../../../tlr.srcs/sources_1/bd/tsr/ipshared/70cf/hdl" --include "/opt/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../tlr.srcs/sources_1/ip/vpm_0_3/src/LUT/sim/LUT.v" \
+"../../../../tlr.srcs/sources_1/ip/vpm_0_3/src/vpm.v" \
+"../../../../tlr.srcs/sources_1/ip/vpm_0_3/sim/vpm_0.v" \
+"../../../../tlr.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../tlr.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../tlr.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

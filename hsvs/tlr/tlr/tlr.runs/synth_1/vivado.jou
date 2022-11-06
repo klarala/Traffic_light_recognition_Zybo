@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 18 15:25:05 2022
+# Process ID: 18786
+# Current directory: /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.runs/synth_1
+# Command line: vivado -log tsr_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tsr_wrapper.tcl
+# Log file: /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.runs/synth_1/tsr_wrapper.vds
+# Journal file: /home/lsriw/Desktop/klara/hsvs1/hsvs/tlr/tlr/tlr.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tsr_wrapper.tcl -notrace

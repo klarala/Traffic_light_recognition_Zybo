@@ -1,0 +1,28 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 6743c657827a4606acd0186af4d86fa5 --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/median5x5.v:79]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/median5x5.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/median5x5.v:83]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 11 for port 'addra' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/delayLinieBRAM_WP.v:66]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'dina' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/delayLinieBRAM_WP.v:67]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'douta' [/home/lsriw/Desktop/klara/hsvs1/hsvs/median5x5/median5x5.srcs/sources_1/new/delayLinieBRAM_WP.v:68]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_in
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.delayLineBRAM
+Compiling module xil_defaultlib.delayLinieBRAM_WP(WIDTH=16)
+Compiling module xil_defaultlib.median5x5
+Compiling module xil_defaultlib.hdmi_out
+Compiling module xil_defaultlib.tb_hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hdmi_behav
